@@ -2,9 +2,10 @@ import { useState } from "react";
 import "./App.css";
 import Contacts from "./components/contacts/Contacts";
 import FormComponent from "./components/form/FormComponent";
+import AddUser from "./utils/fonctions";
 
 const initialValues = {
-  userName: "",
+  username: "",
   phoneNumber: "",
   gender: "",
 };
@@ -13,7 +14,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // AddUSer()
+    AddUser(info);
   };
 
   return (

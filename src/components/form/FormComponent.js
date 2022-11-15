@@ -17,9 +17,9 @@ import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 const FormComponent = ({ info, setInfo, handleSubmit }) => {
   const handleChange = (e) => {
     e.preventDefault();
-    const name = e.target.name;
-    const value = e.target.value;
-    // const { name, value } = e.target;
+    // const name = e.target.name;
+    // const value = e.target.value;
+    const { name, value } = e.target;
 
     setInfo({ ...info, [name]: value });
     console.log(info);
